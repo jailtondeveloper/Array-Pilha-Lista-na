@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07 </title>
+</head>
+<body>
+
+    <img src="nomes.png" > 
+    <p> <hr>
+
+    <h3> Escolha um formato de exibição: </h3>
+    <form name = "registro"> 
+
+    <input type='radio' name='escolha' id='pilha' value='pilha'/> Pilha
+    <input type='radio' name='escolha'  id='lista'  value='lista'/> Lista
+
+    <h2>Informe uma palavra: </h2>
+
+    <input type = 'text' placeholder = "Pilha " size = '10' name = 'txtPilha' id = "nome1">
+    <input type = 'text' placeholder = 'Lista' size = '10'   name = 'txtLista' id = "nome2"> 
+
+    <input type = button onclick = "salvar()" value = 'Inserir Pilha'>
+    <input type = 'button' onclick = "salvar()" value = 'Inserir Lista'> 
+
+    <input type = "reset" onclick = "limpar()" value = "Limpar" >
+
+    </form>
+    <div id = 'dados'>
+    </div>
+
+</body>
+<script src="principal.js" ></script>
+</html>
